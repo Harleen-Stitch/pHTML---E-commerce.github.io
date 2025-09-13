@@ -1,0 +1,200 @@
+* {
+    /*police*/
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+}
+
+.latin {
+    /*police*/
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+
+body{
+  margin: 25px;
+  padding: 15px;
+  text-align: justify;
+}
+
+header{
+  border: solid 1px;
+  border-color: rgb(9, 95, 28);
+  box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+  background-color: rgba(90, 206, 99, 0.7);
+  
+}
+
+h1, h2, h3, h3+.latin, .intro{
+  text-align : center;
+}
+
+footer {
+  border: solid 1px;
+  border-color: rgb(9, 95, 28);
+  box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+  background-color: rgba(90, 206, 99, 0.7);
+  height: 60px;
+  display:flex;
+  justify-content : center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color:black;
+  font-size: small;
+}
+
+
+/* navigation */
+
+/*création d'un bandeau autour du menu nav */
+.menu_deroulant {
+  display: flex;
+  max-height: 250px;
+  color: black;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu_deroulant li {
+  width: minmax(150px 200px);
+  border: 1px solid rgba(8, 102, 14, 0.329);
+  border-radius: 30px;
+  margin-bottom: 5px;
+  background-color: rgba(90, 206, 100, 0.801);
+  box-shadow: 2px 2px 1px rgba(9, 78, 15, 0.822);
+}
+
+/* je supprime les lignes sous les liens*/
+.menu_deroulant li a {
+  display: block;
+  color:black;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu_deroulant li a:hover {
+  background-color: #be49e273;
+  border-radius: 20px;
+}
+
+/*je cache les sous-menu*/
+.menu_deroulant .sous-nav{
+  list-style-type: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.menu_deroulant .sous-nav li a{
+  display: block;
+  color: #FFFFFFFF;
+  text-decoration: none;
+  background-color: rgba(7, 78, 4, 0.9);
+  border-radius: 20px;
+}
+
+.menu_deroulant .sous-nav li a:hover{
+  background-color: #e2494973;
+}
+
+.menu_deroulant li:hover .sous-nav{
+  display: block;
+}
+
+/*mise en page des préssentation produit
+img / txt / prix */
+.apercu{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 15% 15% 70%;
+  grid-auto-columns: 70px;
+  grid-gap: 5px;  
+  margin: 25px;
+  padding: 15px;
+  max-width: 300px;
+  
+}
+
+.cadre {
+  overflow: hidden;
+  padding : 5px ;
+  width:250px;
+  height: 300px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  grid-column: 1/4;
+  grid-row: 1/5;
+}
+
+.apercu > div > h2{
+  font-size: 20px;
+  grid-column: 1/4;
+  grid-row: 5/6;
+  text-align: center;
+ 
+}
+
+.apercu > div > .latin{
+  grid-column: 1/4;
+  grid-row:6/7;
+  text-align: center;
+}
+
+.apercu > div > .volume{
+  grid-column: 1/2 ;
+  grid-row:7/8 ;
+  margin-left: 10px
+}
+
+.apercu > div > .prix{
+  grid-column: 2/3 ;
+  grid-row: 7/8  ;
+}
+
+.apercu > div > .quantite{
+  grid-column: 3/4;
+  grid-row: 7/8;
+  margin-left: 10px
+}
+
+.apercu > div > .details{
+  grid-column:1/4 ;
+  grid-row:8/9 ;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+.vogue{
+  display: flex;
+  padding: 25px;
+  max-width: 300px;
+  justify-self:center;
+  justify-content: center;
+
+}
+
+.marge25{
+  margin: 25px;
+
+}
+
+
+

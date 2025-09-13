@@ -1,0 +1,58 @@
+/* css et html adaptés depuis la page
+ https://juliencrego.com/astuces/slider-dimages-en-pur-css dernière consultation le 13 sept. 2025 */
+.slider {
+  width: 250px;
+  height: 350px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.slider-viewport {
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider-content {
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.slider-content img {
+overflow: hidden;
+width:250px;
+height: 300px;
+}
+
+.slider-nav {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.slider-nav a {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  background-color: #adafbc;
+  width: 15px;
+  height: 15px;
+  margin: 0 3px;
+}
+.slider-nav a:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+}
+
+#img2:target .slider-content {
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+}
+
+#img3:target .slider-content {
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+}

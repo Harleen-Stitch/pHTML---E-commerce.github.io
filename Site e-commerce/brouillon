@@ -1,0 +1,253 @@
+
+                
+                <h3>Purifier la maison</h3>
+                    <ul>
+                        <li class="encens">
+                            La sauge blanche
+                        </li>
+                        <li class="encens">
+                            Le palo santo
+                        </li> 
+                    </ul>
+                    <p>voir plus</p>
+
+
+class :
+    intro
+    categorie
+    description
+    diffusion
+    latin
+    parfum
+    encens
+    apercu => image du produit, son nom, son prix
+    encart => à mettre en couleur
+    container
+
+manu : 
+    menu_deroulant
+    sous-nav
+
+--------------------------------------------------------------
+* {
+    /*police*/
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+}
+
+.latin {
+    /*police*/
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+header{
+  border: solid 1px;
+  border-color: rgb(9, 95, 28);
+  box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+  background-color: rgba(90, 206, 99, 0.7);
+
+}
+
+body{
+  margin: 25px;
+  padding: 15px;
+}
+
+footer {
+  border: solid 1px;
+  border-color: rgb(9, 95, 28);
+  box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+  background-color: rgba(90, 206, 99, 0.7);
+  height: 60px;
+  display:flex;
+  justify-content : center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color:black;
+  font-size: small;
+}
+
+h1, h2{
+  text-align : center;
+}
+/* navigation */
+
+/*création d'un bandeau autour du menu nav */
+.menu_deroulant {
+  display: flex;
+  max-height: 250px;
+  color: black;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu_deroulant li {
+  width: minmax(150px 200px);
+  border: 1px solid rgba(8, 102, 14, 0.329);
+  border-radius: 30px;
+  margin-bottom: 5px;
+  background-color: rgba(90, 206, 100, 0.801);
+  box-shadow: 2px 2px 1px rgba(9, 78, 15, 0.822);
+}
+
+/* je supprime les lignes sous les liens*/
+.menu_deroulant li a {
+  display: block;
+  color:black;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu_deroulant li a:hover {
+  background-color: #be49e273;
+  border-radius: 20px;
+}
+
+/*je cache les sous-menu*/
+.menu_deroulant .sous-nav{
+  list-style-type: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.menu_deroulant .sous-nav li a{
+  display: block;
+  color: #FFFFFFFF;
+  text-decoration: none;
+  background-color: rgba(7, 78, 4, 0.9);
+  border-radius: 20px;
+}
+
+.menu_deroulant .sous-nav li a:hover{
+  background-color: #e2494973;
+}
+
+.menu_deroulant li:hover .sous-nav{
+  display: block;
+}
+
+
+/*mise en page des préssentation produit
+img / txt / prix */
+.apercu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 15% 15% 70%;
+  grid-auto-columns: 70px;
+  grid-gap: 5px;  
+  margin: 25px;
+  padding: 15px;
+  max-width: 300px;
+  
+}
+
+/* pb : les images sont redimensionnées et non coupées*/
+.cadre {
+  overflow: hidden;
+  padding : 5px ;
+  width:250px;
+  height: 300px;
+  display: flex;
+  justify-self:center;
+  grid-column: 1/4;
+  grid-row: 1/5;
+}
+
+.apercu > div > h2{
+  font-size: 20px;
+  grid-column: 1/4;
+  grid-row: 5/6;
+  text-align: center;
+ 
+}
+
+.apercu > div > .latin{
+  grid-column: 1/4;
+  grid-row:6/7;
+  text-align: center;
+
+}
+.apercu > div > .volume{
+  grid-column: 1/2 ;
+  grid-row:7/8 ;
+  margin-left: 10px
+}
+
+.apercu > div > .prix{
+  grid-column: 2/3 ;
+  grid-row: 7/8  ;
+}
+
+.apercu > div > .quantite{
+  grid-column: 3/4;
+  grid-row: 7/8;
+  margin-left: 10px
+}
+
+.apercu > div > .details{
+  grid-column:1/4 ;
+  grid-row:8/9 ;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+
+.marge25{
+  margin: 25px;
+  max-width: 300px; 
+  grid-column: 1/4;
+
+}
+
+
+
+
+___________________________
+<section>
+                <h2>Nos catégories en vogue</h2>
+                    <section class="apercu">
+                        <div class="container">
+                            <img src="photo/huile_essentielle.jpg" class="cadre">
+                                <div class="marge25">
+                                    <p>
+                                        Les <b><a hef="he">huiles essentielles</a></b>&nbsp;: alliées parfaites pour prendre soin de vous et votre intérieur&nbsp;!
+                                    </p><br/>
+                                    <p>
+                                        Envie de renforcer votre immunité en profitant de parfums fins et envoûtant&nbsp;? Venez découvrir nos huiles esssentielles. Chaque huile possède 
+                                        diverses propriétés, vous trouverez forcément celle qui vous faut en fonction de votre humeur et votre énergie&nbsp;!
+                                    </p>
+                                </div>
+                        </div>
+
+                        <div class="container">
+                            <img src="photo/bougie.jpg" class="cadre">
+                                <div class="marge25">
+                                    <p>
+                                        Rallumez la flamme entre vous et votre intérieur avec notre sélection de <a href="bougie.html">bougies</a>
+                                    </p><br/>
+                                    <p>
+                                        Pour une soirée calme, presque au coin du feu, choisissez parmi nos bougies parfumées celle qui vous convient. Leur parfum vous procurera un sentiment 
+                                        de bien-être en diffusant votre parfum préféré.
+                                    </p>
+                                </div>
+                        </div> 
+                    </section>
