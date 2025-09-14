@@ -1,43 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="utf-8" >
+        <title>Bougie - Bio et zen</title>
+        <link href="style.css" rel="stylesheet" >
+        <link href="../style_diapo.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        </style>
+    </head>
 
-<div class="wrapper">
-<head>
-     <meta charset="utf-8" >
-    <title>Accueil - Bio et zen</title>
-    <link href="style.css" rel="stylesheet" >
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>
-</head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu_deroulant">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="he.html">Huiles essentielles</a>
+                        <ul class="sous-nav">
+                            <li><a href="he/liste_he.html">Liste des huiles</a></li>
+                            <li><a href="he_air.html">Pour l'air</a></li>
+                            <li><a href="he_sdb.html">Pour l'eau</a></li>
+                            <li><a href="he_corps.html">Pour le corps</a></li>
+                            <li><a href="he_urgence.html">Soins d'urgence</a></li>
+                        </ul>
+                    </li>                
+                    <li><a href="encens.html">Encens</a></li>
+                    <li><a href="bougie.html">Bougie</a></li>
+                    <li><a href="accessoires.html">Accessoires</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-    <header>
-        <nav>
-            <ul class="menu_deroulant">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="he.html">Huiles essentielles</a>
-                    <ul class="sous-nav">
-                        <li><a href="he/liste_he.html">Liste des huiles</a></li>
-                        <li><a href="he_air.html">Pour l'air</a></li>
-                        <li><a href="he_sdb.html">Pour l'eau</a></li>
-                        <li><a href="he_corps.html">Pour le corps</a></li>
-                        <li><a href="he_urgence.html">Soins d'urgence</a></li>
-                    </ul>
-                </li>                
-                <li><a href="encens.html">Encens</a></li>
-                <li><a href="lampe.html">Lampe Berger</a></li>
-                <li><a href="bougie.html">Bougie</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="panier.html">Panier</a></li>
-            </ul>
-    </header>
+         <main>
+            <h1>
+                Les bougies
+            </h1>
+            <p class="intro">
+                Un bain chaud, une bougie parfumée, de quoi se détendre après une dure journée&nbsp;!
+            </p>
+            <p>
+                Découvrez les bougies de notre partenaire directement sur leur <a href="https://www.bougies-charroux.com/">site</a> et profitez de 5&nbsp;% de réduction avec le code "FAKE".
+            </p>
+            <iframe src="https://www.bougies-charroux.com/" title="Les bougies de Charroux" width="50%" height="500px" allowfullssreen=""></iframe>
 
-    <main>
- 
-    </main>
-    <footer>
-        <a href="legal.html">Informations légales</a>
-    </footer>
-</div>
-</body>
+            <hr/>
+                    <section>
+            <h2>Produits recommandés&nbsp;!</h2>
+                <p>
+                    Pour profitez au mieux, voici nos recommandations&nbsp;
+                </p>
+                <div class="vogue">
+                    <div class="marge25"> <div class="cadre"><img href="photo/cannelle01.jpg" alt="photo d'un plant de cannelle pris par Shijan Kaakkara en 2014"></div>
+                        <h3><a href="he/cannelle.html" >HE de cannelle</a></h3>
+                        <p class="description">
+                            On la retrouve dans les cosmétiques pour ses vertues antiseptiques et elle fait partie de mon top 5 pour son parfum réconfortant. Elle aide d'ailleurs à lutter contre les baisses de moral&nbsp;!
+                        </p>                    
+                    </div>
+                    <b><label for="quantite">Ajouter
+                        <select name="quantite" id="quantite">
+                            <option value="0" selected>0 flacon</option>
+                            <option value="1">1 flacon</option>
+                            <option value="2">2 flacons</option>
+                            <option value="3">3 flacons</option>
+                            <option value="4">4 flacons</option>
+                            <option value="5">5 flacons</option>
+                        </select> de 5ml d'huile essentielle de cannelle 7,90&nbsp;€ au panier.
+                    </label></b>
+                
+                    
+                    <div class="marge25 bloc">
+                            <h3><a href="../encens/sauge_blanche.html" >
+                                Encens à la sauge blanche
+                            </a></h3>
+                            <div class="cadre">
+                                <img src="https://dummyimage.com/250x300/000/fff.jpg" alt="photo d'une boîte de bâton d'encens à la sauge blanche">
+                            </div>
+                            
+                            <p class="description">
+                                Boîte de 5 bâtons d'encens à la sauge blanche. Idéale pour purifier la maison.  
+                            </p>                    
+                        
+                            <b><label for="quantite">
+                                Ajouter <select name="quantite" id="quantite">
+                                            <option value="0" selected>0 boîte</option>
+                                            <option value="1">1 boîte</option>
+                                            <option value="2">2 boîtes</option>
+                                            <option value="3">3 boîtes</option>
+                                            <option value="4">4 boîtes</option>
+                                            <option value="5">5 boîtes</option>
+                                        </select> de 5 bâtons d'encens à la sauge blanche à 1,70&nbsp;€ au panier.
+                            </label></b>
+                        </div>
+                </div>
+        </section>
+        </main>
+        <footer>
+            <a href="legal.html">Informations légales</a>
+        </footer>
+    </body>
+</html>

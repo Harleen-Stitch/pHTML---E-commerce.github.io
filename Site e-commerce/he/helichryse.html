@@ -1,132 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-     <meta charset="utf-8" >
-    <title>Helichryse - Bio et zen</title>
-    <link href="../style.css" rel="stylesheet" >
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>
-</head>
+    <head>
+        <meta charset="utf-8" >
+        <title>Helichryse - Bio et zen</title>
+        <link href="../style.css" rel="stylesheet"s>
+        <link href="../style_diapo.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        </style>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <ul class="menu_deroulant">
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../he.html">Huiles essentielles</a>
-                    <ul class="sous-nav">
-                        <li><a href="liste_he.html">Liste des huiles</a></li>
-                        <li><a  href="../he_air.html">Pour l'air</a></li>
-                        <li><a  href="../he_sdb.html">Pour l'eau</a></li>
-                        <li><a  href="../he_corps.html">Pour le corps</a></li>
-                        <li><a  href="../he_urgence.html">Soins d'urgence</a></li>
-                    </ul>
-                </li>                
-                <li><a  href="../encens.html">Encens</a></li>
-                <li><a href="../lampe.html">Lampe Berger</a></li>
-                <li><a href="../bougie.html">Bougie</a></li>                
-                <li><a  href="../support.html">Support</a></li>
-                <li><a  href="../panier.html">Panier</a></li>
-            </ul>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu_deroulant">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../he.html">Huiles essentielles</a>
+                        <ul class="sous-nav">
+                            <li><a href="liste_he.html">Liste des huiles</a></li>
+                            <li><a  href="../he_air.html">Pour l'air</a></li>
+                            <li><a  href="../he_sdb.html">Pour l'eau</a></li>
+                            <li><a  href="../he_corps.html">Pour le corps</a></li>
+                            <li><a  href="../he_urgence.html">Soins d'urgence</a></li>
+                        </ul>
+                    </li>                
+                    <li><a  href="../encens.html">Encens</a></li>
+                    <li><a href="../bougie.html">Bougie</a></li>
+                    <li><a href="../accessoires.html">Accessoires</a></li>  
+                    <li><a  href="../support.html">Support</a></li>
+                    <li><a  href="../panier.html">Panier</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h1 class="compresse diffusion inhalation soin_peau urgence">HE d'hélichryse italienne</h1>
-            <p class="latin">Helichrysum italicum</p>
-                   <!--manège : css et html adaptés depuis la page https://juliencrego.com/astuces/slider-dimages-en-pur-css/, dernière consultation le 13 sept. 2025 -->
-        <div class="slider">
-            <div class="slider-viewport">
-                <div id="img1">
-                    <div id="img2">
-                        <div id="img3">
-                            <div class="slider-content">
-                                <img src="../photo/helychryse_italienne01.jpg" alt="photo d'hélychryse prise par Luigi Rignanese en 2005">
-                                <img src="../photo/helychryse_italienne_drepanostoma.jpg" alt="photo d'hélychryse" >
-                                <img src="../photo/helychryse_italienne03.jpg" alt="photo d'hélychryse par Paul Herment">
+        <main>
+            <h1 class="compresse diffusion inhalation soin_peau urgence">HE d'hélichryse italienne</h1>
+                <p class="latin">Helichrysum italicum</p>
+                    <!--manège : css et html adaptés depuis la page https://juliencrego.com/astuces/slider-dimages-en-pur-css/, dernière consultation le 13 sept. 2025 -->
+            <div class="slider">
+                <div class="slider-viewport">
+                    <div id="img1">
+                        <div id="img2">
+                            <div id="img3">
+                                <div class="slider-content">
+                                    <img src="../photo/helychryse_italienne01.jpg" alt="photo d'hélychryse prise par Luigi Rignanese en 2005">
+                                    <img src="../photo/helychryse_italienne02.jpg" alt="photo d'hélychryse" >
+                                    <img src="../photo/helychryse_italienne03.jpg" alt="photo d'hélychryse par Paul Herment">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="slider-nav">
+                    <a href="#img1"></a>
+                    <a href="#img2"></a>
+                    <a href="#img3"></a>
+                </div>
             </div>
-            <div class="slider-nav">
-                <a href="#img1"></a>
-                <a href="#img2"></a>
-                <a href="#img3"></a>
-            </div>
-        </div>
-        <b><label for="quantite">Ajouter
-            <select name="quantite" id="quantite">
-                <option value="0" selected>0 flacon</option>
-                <option value="1">1 flacon</option>
-                <option value="2">2 flacons</option>
-                <option value="3">3 flacons</option>
-                <option value="4">4 flacons</option>
-                <option value="5">5 flacons</option>
-            </select> de 5ml d'huile essentielle d'hélychryse au panier.</label></b>
-    <!--fin du manège-->
-                <p class="description">Laissez-vous sséduire par son action <b>régénérante, rafraîchissante,</b>
-                    et <b>apaisante</b> sur la peau. Grâce à ses propriétés <b>antisceptique</b> et <b>anti-inflammatoire</b>, elle favorise
-                    la cicatrisation et réduit les éruptions cutannées.<br/>
-                    Stress, fatigue, anxiosité, fatigue nerveuse ou dépression : tout doit disparaître et cette huile vous y aidera&nbsp;!  
-                </p>
-            <div>
-                <h2>Ses vertus</h2>
-                
-                    <p>
-                        <b>Procure sentiment de bien-être</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat. Cras neque diam, dictum quis lectus nec, ornare tristique arcu. In in dolor consequat nunc elementum aliquet. Cras ligula est, ullamcorper sed lacus vitae, blandit mollis quam. Vestibulum nulla mi, volutpat nec venenatis scelerisque, semper ut enim. Donec volutpat tortor id orci euismod tincidunt. Suspendisse sollicitudin ullamcorper faucibus. Nulla sit.
+            <b><label for="quantite">Ajouter
+                <select name="quantite" id="quantite">
+                    <option value="0" selected>0 flacon</option>
+                    <option value="1">1 flacon</option>
+                    <option value="2">2 flacons</option>
+                    <option value="3">3 flacons</option>
+                    <option value="4">4 flacons</option>
+                    <option value="5">5 flacons</option>
+                </select> de 5ml d'huile essentielle d'hélychryse au panier.</label></b>
+        <!--fin du manège-->
+                    <p class="description">Laissez-vous sséduire par son action <b>régénérante, rafraîchissante,</b>
+                        et <b>apaisante</b> sur la peau. Grâce à ses propriétés <b>antisceptique</b> et <b>anti-inflammatoire</b>, elle favorise
+                        la cicatrisation et réduit les éruptions cutannées.<br/>
+                        Stress, fatigue, anxiosité, fatigue nerveuse ou dépression : tout doit disparaître et cette huile vous y aidera&nbsp;!  
                     </p>
-                    <p>
-                        <b>Antalgique</b> Anti-inflammatoire, lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
-                    </p> 
-                    <p>
-                        <b>Cicatrise les blessures et lutte contre les infections</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
-                    </p>
-                    <p>
-                        <b>Bénéfique pour la peau</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
-                    </p>
-                    <p>
-                        <b>Apaise la peau</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
-                    </p>
-                    <p>
-                        <b>Stimule la circulation sanguine</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
-                    </p>
-                    <p>
-                        <b>Apaise la toux et le rhume</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
-                    </p>
-                <h2>Emplois conseillés</h2>
-                    <p>
-                        <b>Soin d'urgence</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
-                    </p>
-                    <p>
-                        <b>Compresse</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
-                    </p>
-                    <p>
-                        <b>Inhalation humide</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
-                    </p>
-                    <p>
-                        <b>Diffusion</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
-                    </p>
-                    <p>
-                        <b>Tonique</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
-                    </p>
-                    <p><i>Précaution d'usage&nbsp;: utiliser cette huile bien diluée (moins de 0,5%).</i></p>
+                <div>
+                    <h2>Ses vertus</h2>
                     
-                    <div class="encart">
-                        <h3>La plante</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
+                            <b>Procure sentiment de bien-être</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat. Cras neque diam, dictum quis lectus nec, ornare tristique arcu. In in dolor consequat nunc elementum aliquet. Cras ligula est, ullamcorper sed lacus vitae, blandit mollis quam. Vestibulum nulla mi, volutpat nec venenatis scelerisque, semper ut enim. Donec volutpat tortor id orci euismod tincidunt. Suspendisse sollicitudin ullamcorper faucibus. Nulla sit.
                         </p>
-                        <h3>L'huile essentielle</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo 
+                            <b>Antalgique</b> Anti-inflammatoire, lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
+                        </p> 
+                        <p>
+                            <b>Cicatrise les blessures et lutte contre les infections</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
                         </p>
-                    </div>
-            </div>
-            
-    </main>
-    <footer>
-        <a href="../legal.html">Informations légales</a>
-    </footer>
-</body>
+                        <p>
+                            <b>Bénéfique pour la peau</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
+                        </p>
+                        <p>
+                            <b>Apaise la peau</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
+                        </p>
+                        <p>
+                            <b>Stimule la circulation sanguine</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
+                        </p>
+                        <p>
+                            <b>Apaise la toux et le rhume</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo. Curabitur hendrerit tortor eu mattis condimentum. Nunc pulvinar mattis dui at placerat.
+                        </p>
+                    <h2>Emplois conseillés</h2>
+                        <p>
+                            <b>Soin d'urgence</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
+                        </p>
+                        <p>
+                            <b>Compresse</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
+                        </p>
+                        <p>
+                            <b>Inhalation humide</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
+                        </p>
+                        <p>
+                            <b>Diffusion</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
+                        </p>
+                        <p>
+                            <b>Tonique</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
+                        </p>
+                        <p><i>Précaution d'usage&nbsp;: utiliser cette huile bien diluée (moins de 0,5%).</i></p>
+                        
+                        <div class="encart">
+                            <h3>La plante</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo
+                            </p>
+                            <h3>L'huile essentielle</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut eros in turpis volutpat venenatis vel vel leo 
+                            </p>
+                        </div>
+                </div>
+                
+        </main>
+        <footer>
+            <a href="../legal.html">Informations légales</a>
+        </footer>
+    </body>
+</html>

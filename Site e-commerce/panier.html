@@ -1,40 +1,78 @@
 <!DOCTYPE html>
-<html lang="fr">
+    <html lang="fr">
 
-<head>
-     <meta charset="utf-8" >
-    <title>Panier - Bio et zen</title>
-    <link href="style.css" rel="stylesheet" >
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>
-</head>
+    <head>
+        <meta charset="utf-8" >
+        <title>Panier - Bio et zen</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="../style_diapo.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        </style>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <ul class="menu_deroulant">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="he.html">Huiles essentielles</a>
-                    <ul class="sous-nav">
-                        <li><a href="he/liste_he.html">Liste des huiles</a></li>
-                        <li><a href="he_air.html">Pour l'air</a></li>
-                        <li><a href="he_sdb.html">Pour l'eau</a></li>
-                        <li><a href="he_corps.html">Pour le corps</a></li>
-                        <li><a href="he_urgence.html">Soins d'urgence</a></li>
-                    </ul>
-                </li>                
-                <li><a href="encens.html">Encens</a></li>
-                <li><a href="lampe.html">Lampe Berger</a></li>
-                <li><a href="bougie.html">Bougie</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="panier.html">Panier</a></li>
-            </ul>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu_deroulant">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="he.html">Huiles essentielles</a>
+                        <ul class="sous-nav">
+                            <li><a href="he/liste_he.html">Liste des huiles</a></li>
+                            <li><a href="he_air.html">Pour l'air</a></li>
+                            <li><a href="he_sdb.html">Pour l'eau</a></li>
+                            <li><a href="he_corps.html">Pour le corps</a></li>
+                            <li><a href="he_urgence.html">Soins d'urgence</a></li>
+                        </ul>
+                    </li>                
+                    <li><a href="encens.html">Encens</a></li>
+                    <li><a href="bougie.html">Bougie</a></li>
+                    <li><a href="accessoires.html">Accessoires</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-    </main>
-    <footer>
-        <a href="legal.html">Informations légales</a>
-    </footer>
-</body>
+        <main>
+            <h1>
+                Votre panier
+            </h1>
+            <table>
+                <theader>
+                    <tr>
+                        <th>Produits</th>
+                        <th>Prix unitaire
+                        <th>Quantité</th>
+                        <th>Total</th>
+                    </tr>
+                </theader>
+                <tbody>
+                    <tr>
+                        <td>Encens à la sauge blanche</td>
+                        <td>1,70&nbsp;€</td>
+                        <td>5</td>
+                        <td>8,50&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <td>He de cannelle</td>
+                        <td>7,90&nbsp;€</td>
+                        <td>2</td>
+                        <td>15,80&nbsp;€</td>
+                    </tr>                     
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <td></td>
+                        <td></td>
+                        <td><b>24,30&nbsp;€</b></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <footer>
+            <a href="legal.html">Informations légales</a>
+        </footer>
+    </body>
+</html>

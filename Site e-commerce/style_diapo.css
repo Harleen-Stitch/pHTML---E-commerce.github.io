@@ -1,6 +1,7 @@
 /* css et html adaptés depuis la page
  https://juliencrego.com/astuces/slider-dimages-en-pur-css dernière consultation le 13 sept. 2025 */
-.slider {
+
+ .slider {
   width: 250px;
   height: 350px;
   margin: 0px auto;
@@ -32,6 +33,7 @@ height: 300px;
   margin-top: 10px;
   text-align: center;
 }
+
 .slider-nav a {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.3);
