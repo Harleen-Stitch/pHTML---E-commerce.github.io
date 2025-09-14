@@ -14,20 +14,7 @@
     margin-top: -3%;
     }
     
-    footer {
-    border: solid 1px;
-    border-color: rgb(9, 95, 28);
-    box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
-    background-color: rgb(151, 238, 159);
-    height: 60px;
-    display:flex;
-    justify-content : center;
-    align-items: center;
-    position:fixed;
-    bottom: 0.2%;
-    left: 0;
-    right: 0;
-    }
+
 
 /* navigation */
 
@@ -132,14 +119,15 @@ img / txt / prix */
 .reco{
   display:flex;
   flex-wrap: wrap;
-  margin: auto;
 }
 
-.bloc {
-  min-width: 300px;
-  max-width: 340px;
-}
-}
+    .bloc {
+    min-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    }
+    }
 
 @media (max-height:1300px) and (max-width: 1300px){
     header{

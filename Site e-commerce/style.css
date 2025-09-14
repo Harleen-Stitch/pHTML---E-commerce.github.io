@@ -47,6 +47,7 @@ footer {
   display:flex;
   justify-content : center;
   align-items: center;
+  margin-top: 10%;
 }
 
 footer a {
@@ -137,7 +138,7 @@ img / txt / prix */
 .cadre {
   overflow: hidden;
   padding : 5px ;
-  width:250px;
+  width: 250px;
   height: 300px;
   display: flex;
   justify-content:center;
@@ -215,8 +216,4 @@ table, td {
 .bloc {
   min-width: 300px;
   max-width: 340px;
-}
-
-.slider id{
-  position:static;
 }
