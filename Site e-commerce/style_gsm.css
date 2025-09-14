@@ -1,0 +1,153 @@
+@media (max-width: 1300px)  {
+    *{
+        font-size: 42px;
+        margin: 5px;
+    }
+    header{
+    border: solid 1px;
+    border-color: rgb(9, 95, 28);
+    box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+    background-color: rgb(151, 238, 159);
+    opacity: 1;
+    position: sticky ;
+    top: 0;
+    margin-top: -3%;
+    }
+    
+    footer {
+    border: solid 1px;
+    border-color: rgb(9, 95, 28);
+    box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+    background-color: rgb(151, 238, 159);
+    height: 60px;
+    display:flex;
+    justify-content : center;
+    align-items: center;
+    position:fixed;
+    bottom: 0.2%;
+    left: 0;
+    right: 0;
+    }
+
+/* navigation */
+
+/*création d'un bandeau autour du menu nav */
+    .menu_deroulant {
+    display: flex;
+    max-height: 200px;
+    color: black;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+    .menu_deroulant li {
+    max-height: max-content;
+    border: 1px solid rgba(8, 102, 14, 0.329);
+    border-radius: 30px;
+    margin-bottom: 5px;
+    background-color: rgb(90, 206, 100);
+    box-shadow: 2px 2px 1px rgba(9, 78, 15, 0.822);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+/* je décide de supprimer les sous-menus sur téléphone*/
+.menu_deroulant .sous-nav li a{
+  display: none;
+}
+
+/*mise en page des préssentation produit
+img / txt / prix */
+.apercu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+    .container{
+        display:grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1%;
+        margin: 25px;
+        padding: 15px;
+        max-width: 300px;
+        min-width: 100%;
+  
+    }
+
+    .cadre {
+    overflow: hidden;
+    padding : 5px ;
+    width: 250px;
+    height: 300px;
+    grid-column: 3fr;
+    grid-row: 1/4;
+}
+
+    .apercu > div > h2, .apercu > div >h3{
+    font-size: 100%;
+    grid-column:3/6;
+    grid-row: 1/2;
+    }
+
+    .apercu > div > .latin{
+    margin-top: -2%;
+    grid-column: 3/6;
+    grid-row: 2/3;
+    }
+
+    .apercu > div > .volume{
+
+    margin-left: 10px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    }
+
+    .apercu > div > .prix{
+        grid-column: 4/5;
+    grid-row: 3/4;
+    }
+
+    .apercu > div > .quantite{
+    grid-column: 5/6;
+    grid-row: 3/4;
+    margin-left: 10px;
+    }
+
+    .apercu > div > .details{
+    grid-column:1/4 ;
+    grid-row:4/5 ;
+    }
+
+    .vogue{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 80%
+}
+
+    form{
+        line-height: 150%;
+    }
+.reco{
+  display:flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.bloc {
+  min-width: 300px;
+  max-width: 340px;
+}
+}
+
+@media (max-height:1300px) and (max-width: 1300px){
+    header{
+    border: solid 1px;
+    border-color: rgb(9, 95, 28);
+    box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+    background-color: rgb(151, 238, 159);
+    opacity: 1;
+    position:relative;
+    }
+}

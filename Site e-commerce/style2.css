@@ -27,7 +27,6 @@ header{
   border-color: rgb(9, 95, 28);
   box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
   background-color: rgba(90, 206, 99, 0.7);
-  
 }
 
 h1, h2, h3, h3+.latin, .intro{
@@ -112,6 +111,7 @@ footer a {
   display: block;
 }
 
+
 /*mise en page des préssentation produit
 img / txt / prix */
 .apercu{
@@ -127,7 +127,6 @@ img / txt / prix */
   margin: 25px;
   padding: 15px;
   max-width: 300px;
-  
 }
 
 .cadre {
@@ -142,12 +141,11 @@ img / txt / prix */
   grid-row: 1/5;
 }
 
-.apercu > div > h2{
+.apercu > div > h2, .apercu > div >h3{
   font-size: 20px;
   grid-column: 1/4;
   grid-row: 5/6;
   text-align: center;
- 
 }
 
 .apercu > div > .latin{
@@ -159,7 +157,7 @@ img / txt / prix */
 .apercu > div > .volume{
   grid-column: 1/2 ;
   grid-row:7/8 ;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .apercu > div > .prix{
@@ -170,7 +168,7 @@ img / txt / prix */
 .apercu > div > .quantite{
   grid-column: 3/4;
   grid-row: 7/8;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .apercu > div > .details{
@@ -199,7 +197,7 @@ img:hover {
   display:flex;
   flex-wrap: wrap;
   margin: auto;
-  
+
   
 }
 
