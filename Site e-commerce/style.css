@@ -3,8 +3,10 @@
     /*police*/
   font-family: "Funnel Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 20px;
+  font-weight: 30px;
   font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 
 .latin {
@@ -18,20 +20,19 @@
 }
 
 body{
-  margin-top: 2%;
-  padding: 5px;
+  margin-top: 1em;
+  padding: 1em;
   text-align: justify;
 }
 
 header{
   border: solid 1px;
   border-color: rgb(9, 95, 28);
-  box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+  box-shadow: 0.5em 0.5em 0.2em rgba(7, 78, 4, 0.7);
   background-color: rgb(151, 238, 159);
   opacity: 1;
   position: sticky ;
   top: 0;
-
 }
 
 h1, h2, h3, h3+.latin, .intro{
@@ -52,43 +53,62 @@ footer {
 
 footer a {
   text-decoration: none;
-  color:black;
+  color:rgb(255, 255, 255);
   font-size: small;
+  border: solid 1px #164B1B;
+  background-color:#164B1B;
+  border-radius: 30px;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 1px rgba(9, 78, 15, 0.822);
+  padding : 6px 10px;
 }
 
+/* accessibilité */
+a:focus, button:focus, input:focus, textarea:focus{
+  outline-color: rgb(164, 41, 221);
+  outline-width: 0.8em;
+  outline-style: double;
+}
 
+a{
+  color:rgb(29, 29, 230);
+}
+
+a:visited{
+  color:rgb(224, 52, 173);
+}
 /* navigation */
 
 /*création d'un bandeau autour du menu nav */
 .menu_deroulant {
   display: flex;
-  max-height: 250px;
-  color: black;
+  max-height: 2em;
+  color: rgb(255, 255, 255);
   list-style: none;
   justify-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
 }
 
 .menu_deroulant li {
-  width: minmax(150px 200px);
-  border: 1px solid rgba(8, 102, 14, 0.329);
-  border-radius: 30px;
-  margin-bottom: 5px;
-  background-color: rgb(90, 206, 100);
-  box-shadow: 2px 2px 1px rgba(9, 78, 15, 0.822);
+  border: 0.012em solid rgba(8, 102, 14, 0.329);
+  border-radius: 1em;
+  background-color:#164B1B;
+  max-height: max-content;
 }
 
 /* je supprime les lignes sous les liens*/
 .menu_deroulant li a {
   display: block;
-  color:black;
+  color:rgb(255, 255, 255);
   padding: 6px 10px;
   text-align: center;
   text-decoration: none;
+  border-style :none;
 }
 
 .menu_deroulant li a:hover {
-  background-color: #be49e273;
+  background-color: #d165f1ec;
   border-radius: 20px;
 }
 
@@ -96,8 +116,6 @@ footer a {
 .menu_deroulant .sous-nav{
   list-style-type: none;
   display: none;
-  padding: 0;
-  margin: 0;
   position: absolute;
 }
 
@@ -106,7 +124,7 @@ footer a {
   color: #FFFFFFFF;
   text-decoration: none;
   background-color: rgba(7, 78, 4, 0.9);
-  border-radius: 20px;
+  border-radius: 1em;
 }
 
 .menu_deroulant .sous-nav li a:hover{
@@ -125,81 +143,82 @@ img / txt / prix */
   flex-wrap: wrap;
 }
 
+/* contient le nom, l'img, les infos produit (prix, conditionnement, qté à ajouter)  des produits */
 .container{
   display:grid;
-  grid-template-columns: 15% 15% 70%;
-  grid-auto-columns: 70px;
-  grid-gap: 5px;  
-  margin: 25px;
-  padding: 15px;
-  max-width: 300px;
+  grid-template-columns: 15% 15% 35% 35%;
+  grid-auto-columns: 50em;
+  grid-gap: 0.5em;  
+  margin: 2em;
+  padding: 0.5em;
+  max-width: 7em;
 }
 
+
+/*contient la photo*/
 .cadre {
   overflow: hidden;
   padding : 5px ;
-  width: 250px;
-  height: 300px;
+  width: 6.8em;
+  height: 8em;
   display: flex;
   justify-content:center;
   align-items: center;
-  grid-column: 1/4;
-  grid-row: 1/5;
+  grid-column: 1/3;
+  grid-row: 3/7;
+  margin: 0 auto; /* permet de centrer le cadre au texte en gardant le centrage de la photo */
 }
 
+
+
 .apercu > div > h2, .apercu > div >h3{
-  font-size: 20px;
-  grid-column: 1/4;
-  grid-row: 5/6;
+  font-size: 0.8em;
+  grid-column: 1/5;
+  grid-row: 1/2;
   text-align: center;
 }
 
 .apercu > div > .latin{
-  grid-column: 1/4;
-  grid-row:6/7;
+  grid-column: 1/5;
+  grid-row:2/3;
   text-align: center;
 }
 
 .apercu > div > .volume{
-  grid-column: 1/2 ;
+  grid-column: 1/3 ;
   grid-row:7/8 ;
   margin-left: 10px;
 }
 
 .apercu > div > .prix{
-  grid-column: 2/3 ;
+  grid-column: 3/5 ;
   grid-row: 7/8  ;
 }
 
 .apercu > div > .quantite{
-  grid-column: 3/4;
-  grid-row: 7/8;
+  grid-column: 1/5;
+  grid-row: 8/9; 
   margin-left: 10px;
 }
 
 .apercu > div > .details{
-  grid-column:1/4 ;
-  grid-row:8/9 ;
+  grid-column: 1/5 ;
+  grid-row: 9/10 ;
 }
+
+
 
 img:hover {
   opacity: 0.5;
 }
 
-.vogue{
-  display: flex;
-  padding: 25px;
-  max-width: 300px;
-  justify-self:center;
-  justify-content: center;
-
-}
-
 .marge25{
-  margin: 25px;
+  margin-left: 25px;
 }
 
-
+.reco .marge25, .reco .bloc{
+  width: 30%
+}
 
 table, td {
   border:1px;
@@ -210,10 +229,9 @@ table, td {
 .reco{
   display:flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0.5em;
+  justify-content: space-around;
 }
 
-.bloc {
-  min-width: 300px;
-  max-width: 340px;
-}
+
+

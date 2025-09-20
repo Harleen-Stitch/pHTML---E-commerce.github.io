@@ -1,17 +1,17 @@
 @media (max-width: 1300px)  {
     *{
-        font-size: 42px;
-        margin: 5px;
+        font-size: 1.15em;
+        margin: 0.15em;
     }
     header{
-    border: solid 1px;
+    border: solid 0.15em;
     border-color: rgb(9, 95, 28);
-    box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+    box-shadow: 0.3125em 0.3125em 0.125em rgba(7, 78, 4, 0.7);
     background-color: rgb(151, 238, 159);
     opacity: 1;
     position: sticky ;
     top: 0;
-    margin-top: -3%;
+    
     }
     
 
@@ -21,8 +21,8 @@
 /*création d'un bandeau autour du menu nav */
     .menu_deroulant {
     display: flex;
-    max-height: 200px;
-    color: black;
+    max-height: 6em;
+    color: rgb(255, 255, 255);
     list-style: none;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -30,11 +30,11 @@
 
     .menu_deroulant li {
     max-height: max-content;
-    border: 1px solid rgba(8, 102, 14, 0.329);
-    border-radius: 30px;
-    margin-bottom: 5px;
-    background-color: rgb(90, 206, 100);
-    box-shadow: 2px 2px 1px rgba(9, 78, 15, 0.822);
+    border: 0.0625em solid rgba(8, 102, 14, 0.329);
+    border-radius: 1.875em;
+    margin-bottom: 0.3125em;
+    background-color:#164B1B;
+    box-shadow: 0.125em 0.125em 0.0625 rgba(9, 78, 15, 0.822);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,16 +56,16 @@ img / txt / prix */
         display:grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 1%;
-        margin: 25px;
-        padding: 15px;
-        max-width: 300px;
+        margin: 1.5625em;
+        padding: 0.9375em;
+        max-width: 18.75em;
         min-width: 100%;
   
     }
 
     .cadre {
     overflow: hidden;
-    padding : 5px ;
+    padding : 0.3125em ;
     width: 250px;
     height: 300px;
     grid-column: 3fr;
@@ -86,7 +86,7 @@ img / txt / prix */
 
     .apercu > div > .volume{
 
-    margin-left: 10px;
+    margin-left: 0.625em;
     grid-column: 3/4;
     grid-row: 3/4;
     }
@@ -99,7 +99,7 @@ img / txt / prix */
     .apercu > div > .quantite{
     grid-column: 5/6;
     grid-row: 3/4;
-    margin-left: 10px;
+    margin-left: 0.625em;
     }
 
     .apercu > div > .details{
@@ -124,16 +124,16 @@ img / txt / prix */
     .bloc {
     min-width: 80%;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 0.625em;
+    margin-bottom: 0.9375em;
     }
     }
 
 @media (max-height:1300px) and (max-width: 1300px){
     header{
-    border: solid 1px;
+    border: solid 0.0625em;
     border-color: rgb(9, 95, 28);
-    box-shadow: 5px 5px 2px rgba(7, 78, 4, 0.7);
+    box-shadow: 0.3125em 0.3125em 0.125em rgba(7, 78, 4, 0.7);
     background-color: rgb(151, 238, 159);
     opacity: 1;
     position:relative;

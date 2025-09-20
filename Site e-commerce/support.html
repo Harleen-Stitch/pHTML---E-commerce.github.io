@@ -48,23 +48,23 @@
                     <!-- Form Inputs. Each input must have a name="" attribute -->
                 <p>
                     <label for="name">Nom&nbsp;:</label>
-                    <input name="name" id="name" type="text" placeholder="NOM" required/>
+                    <input name="name" id="name" type="text" autocomplete="family-name" placeholder="NOM" required/>
                 </p>
                 <p>
                     <label for="first_name">Prénom&nbsp;:</label>
-                    <input name="first_name" id="first_name" type="text" placeholder="Prénom" required/>
+                    <input name="first_name" id="first_name" type="text" autocomplete="given-name" placeholder="Prénom" required/>
                 </p>
                 <p>
                     <label for="number">Téléphone&nbsp;:</label>
-                    <input name="number" id="number" type="tel" placeholder="0123456789" required/>
+                    <input name="number" id="number" type="tel" autocomplete="tel"  placeholder="0123456789" required/>
                 </p>
                 <p>
                     <label for="email">Email&nbsp;:</label>
-                    <input name="email" id="email" type="email" placeholder="exemple@exemple.com" required/>
+                    <input name="email" id="email" type="email" autocomplete="email" placeholder="exemple@exemple.com" required/>
                 </p>
                 <p>
                     <label for="message">Votre message&nbsp;</label>
-                    <textarea name="message" id="message" type="text" placeholder="Tapez votre message ici" required/></textarea>
+                    <textarea name="message" id="message" type="text" placeholder="Tapez votre message ici" required></textarea>
                 </p>
                 <p>
                     <label for="recontanter">J'accepte d'être recontacté.</label>
@@ -74,7 +74,7 @@
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <!-- Custom Confirmation / Success Page: ne fonctionne pas tant que le site n'est pas hébergé -->
-                <input type="hidden" name="redirect" value="https://bioetzen/support_confirmation.html"/>
+                <!--<input type="hidden" name="redirect" value="https://bioetzen/support_confirmation.html"/> -->
                 <p>
                     <button type="submit">Envoyer</button>
                 </p>
