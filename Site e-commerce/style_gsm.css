@@ -10,10 +10,12 @@
     background-color: rgb(151, 238, 159);
     opacity: 1;
     position: sticky ;
-    top: 0;
-    
+    top: 0;    
     }
     
+    footer > a, footer a:visited{
+        color: rgb(255, 255, 255);
+    }
 
 
 /* navigation */
@@ -26,6 +28,7 @@
     list-style: none;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-height: max-content;
     }
 
     .menu_deroulant li {

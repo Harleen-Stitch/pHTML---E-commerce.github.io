@@ -1,6 +1,6 @@
 /* css et html adaptés depuis la page
  https://juliencrego.com/astuces/slider-dimages-en-pur-css dernière consultation le 13 sept. 2025 */
-
+@media (min-width: 1300px)  {
  .slider {
   width: 250px;
   margin: 0px auto;
@@ -63,4 +63,17 @@ height: 300px;
 #img3:target .slider-content {
   -webkit-transform: translateX(-500px);
           transform: translateX(-500px);
+}
+}
+
+@media (max-width: 1299px){
+  .slider img {
+  overflow: hidden;
+  padding : 5px ;
+  width: 3.4em;
+  height: 4em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  }
 }

@@ -46,20 +46,39 @@
                         <th width="15%">Prix unitaire
                         <th width="15%">Quantité</th>
                         <th width="15%">Total</th>
+                        
                     </tr>
                 </theader>
                 <tbody>
                     <tr>
                         <td>Encens à la sauge blanche</td>
                         <td>1,70&nbsp;€</td>
-                        <td>5</td>
+                        <td>
+                            <select name="quantite" id="quantite">
+                                <option value="5" selected>5  boîtes</option>
+                                <option value="0">0 boîte</option>
+                                <option value="1">1 boîte</option>
+                                <option value="2">2 boîtes</option>
+                                <option value="3">3 boîtes</option>
+                                <option value="4">4 boîtes</option>
+                            </select>
+                        </td>
                         <td>8,50&nbsp;€</td>
                     </tr>
                     <tr>
                         <td>He de cannelle</td>
-                        <td>7,90&nbsp;€</td>
-                        <td>2</td>
-                        <td>15,80&nbsp;€</td>
+                        <td>15,52&nbsp;€</td>
+                        <td>
+                            <select name="quantite" id="quantite">
+                                <option value="2" selected>2  flacons</option>
+                                <option value="0">0 flacon</option>
+                                <option value="1">1 flacon</option>
+                                <option value="3">3 flacons</option>
+                                <option value="4">4 flacons</option>
+                                <option value="5">5 flacons</option>
+                            </select>
+                        </td>
+                        <td>31,04&nbsp;€</td>
                     </tr>                     
                 </tbody>
                 <tfoot>
@@ -67,10 +86,11 @@
                         <th>Total</th>
                         <td></td>
                         <td></td>
-                        <td><b>24,30&nbsp;€</b></td>
+                        <td><b>39,54&nbsp;€</b></td>
                     </tr>
                 </tfoot>
             </table>
+            <button>Payer</button>
         </main>
         <footer>
             <a href="legal.html">Informations légales</a>

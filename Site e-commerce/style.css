@@ -5,7 +5,7 @@
   font-optical-sizing: auto;
   font-weight: 30px;
   font-style: normal;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   font-size: 1.5rem;
 }
 
@@ -61,6 +61,7 @@ footer a {
   margin-bottom: 5px;
   box-shadow: 2px 2px 1px rgba(9, 78, 15, 0.822);
   padding : 6px 10px;
+
 }
 
 /* accessibilité */
@@ -90,7 +91,7 @@ a:visited{
   flex-wrap: wrap;
 }
 
-.menu_deroulant li {
+.menu_deroulant li, button {
   border: 0.012em solid rgba(8, 102, 14, 0.329);
   border-radius: 1em;
   background-color:#164B1B;
@@ -107,9 +108,9 @@ a:visited{
   border-style :none;
 }
 
-.menu_deroulant li a:hover {
+.menu_deroulant li a:hover, button:hover, footer a:hover {
   background-color: #d165f1ec;
-  border-radius: 20px;
+  border-radius: 1em;
 }
 
 /*je cache les sous-menu*/
@@ -207,7 +208,6 @@ img / txt / prix */
 }
 
 
-
 img:hover {
   opacity: 0.5;
 }
@@ -233,5 +233,11 @@ table, td {
   justify-content: space-around;
 }
 
-
-
+button {
+  display: flex;
+  justify-self: center;
+  margin-top: 2em;
+  padding: 0.5em;
+  border-radius: 1em;
+  color: #FFFFFFFF;
+}
